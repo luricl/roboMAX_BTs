@@ -1,0 +1,10 @@
+[0.014s] Invoking command in '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt -- -j12 -l12
+[0.057s] [35m[1mConsolidate compiler generated dependencies of target bt_executor[0m
+[0.074s] [ 50%] [32m[1mLinking CXX executable bt_executor[0m
+[0.377s] /usr/bin/ld: CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o: in function `std::_MakeUniq<navToNode>::__single_object std::make_unique<navToNode, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, BT::NodeConfiguration const&, std::shared_ptr<rclcpp::Node> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, BT::NodeConfiguration const&, std::shared_ptr<rclcpp::Node>&&)':
+[0.377s] bt_executor.cpp:(.text._ZSt11make_uniqueI9navToNodeJRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN2BT17NodeConfigurationESt10shared_ptrIN6rclcpp4NodeEEEENSt9_MakeUniqIT_E15__single_objectEDpOT0_[_ZSt11make_uniqueI9navToNodeJRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN2BT17NodeConfigurationESt10shared_ptrIN6rclcpp4NodeEEEENSt9_MakeUniqIT_E15__single_objectEDpOT0_]+0x8b): undefined reference to `navToNode::navToNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, BT::NodeConfiguration const&, std::shared_ptr<rclcpp::Node>)'
+[0.386s] collect2: error: ld returned 1 exit status
+[0.388s] gmake[2]: *** [CMakeFiles/bt_executor.dir/build.make:460: bt_executor] Error 1
+[0.388s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_executor.dir/all] Error 2
+[0.388s] gmake: *** [Makefile:146: all] Error 2
+[0.390s] Invoked command in '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt -- -j12 -l12

@@ -1,0 +1,37 @@
+running egg_info
+creating ../build/rome_sim/rome_sim.egg-info
+writing ../build/rome_sim/rome_sim.egg-info/PKG-INFO
+writing dependency_links to ../build/rome_sim/rome_sim.egg-info/dependency_links.txt
+writing entry points to ../build/rome_sim/rome_sim.egg-info/entry_points.txt
+writing requirements to ../build/rome_sim/rome_sim.egg-info/requires.txt
+writing top-level names to ../build/rome_sim/rome_sim.egg-info/top_level.txt
+writing manifest file '../build/rome_sim/rome_sim.egg-info/SOURCES.txt'
+reading manifest file '../build/rome_sim/rome_sim.egg-info/SOURCES.txt'
+writing manifest file '../build/rome_sim/rome_sim.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build
+creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build/lib
+creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build/lib/rome_sim
+copying rome_sim/__init__.py -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build/lib/rome_sim
+running install
+running install_lib
+creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages/rome_sim
+copying /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build/lib/rome_sim/__init__.py -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages/rome_sim
+byte-compiling /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages/rome_sim/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/ament_index
+creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/ament_index/resource_index
+creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/ament_index/resource_index/packages
+copying resource/rome_sim -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/ament_index/resource_index/packages
+copying package.xml -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim
+copying launch/tb4_sim_bringup.launch.py -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim
+creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim/params
+copying params/nav2_params.yaml -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim/params/
+creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim/maps
+copying maps/warehouse.yaml -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim/maps/
+copying maps/warehouse.pgm -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim/maps/
+running install_egg_info
+Copying ../build/rome_sim/rome_sim.egg-info to /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages/rome_sim-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/install.log'

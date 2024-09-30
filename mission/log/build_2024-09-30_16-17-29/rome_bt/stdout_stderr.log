@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target bt_executor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o[0m
+[100%] [32m[1mLinking CXX executable bt_executor[0m
+[100%] Built target bt_executor
+-- Install configuration: ""
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees
+-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees/lab_samples_bt.xml
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees/plugins.txt
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees/bt_example1.xml
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees/bt_example3.xml
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees/bt_example2.xml
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/launch
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/launch/execute_bt.launch.py
+-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/lib/rome_bt/bt_executor
+-- Set runtime path of "/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/lib/rome_bt/bt_executor" to ""
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/ament_index/resource_index/package_run_dependencies/rome_bt
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/ament_index/resource_index/parent_prefix_path/rome_bt
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/environment/ament_prefix_path.sh
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/environment/path.sh
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/environment/path.dsv
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/local_setup.bash
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/local_setup.sh
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/local_setup.zsh
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/local_setup.dsv
+-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/package.dsv
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/ament_index/resource_index/packages/rome_bt
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/cmake/rome_btConfig.cmake
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/cmake/rome_btConfig-version.cmake
+-- Up-to-date: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/package.xml

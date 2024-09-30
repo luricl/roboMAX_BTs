@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4"
+      main_tree_to_execute="main">
+  <BehaviorTree ID="ApproachArm(t2)">
+    <Sequence>
+      <navTo x="2"
+             y="2"
+             yaw="-1.57"/>
+      <approach_arm arm="{arm}"
+                    wait_duration_sec="5"/>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="ApproachNurse(t0)">
+    <Sequence>
+      <navTo x="1"
+             y="2"
+             yaw="1.57"/>
+      <approach_nurse nurse="{nurse}"
+                      wait_duration_sec="5"/>
+      <authenticate_nurse nurse="{nurse}"
+                          number="5"/>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="PickSample(t1)">
+    <Sequence>
+      <open_drawer robot="{robot}"
+                   wait_duration_sec="5"/>
+      <deposit is_deposited="{deposit_signal}"
+               wait_duration_sec="5"/>
+      <close_drawer robot="{robot}"
+                    wait_duration_sec="5"/>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="UnloadSample(t3)">
+    <Sequence>
+      <open_drawer robot="{robot}"
+                   wait_duration_sec="5"/>
+      <pickup_sample is_picked="{pick_signal}"
+                     wait_duration_sec="5"/>
+      <close_drawer robot="{robot}"
+                    wait_duration_sec="5"/>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="main">
+    <Sequence>
+      <SubTree ID="ApproachNurse(t0)"/>
+      <SubTree ID="PickSample(t1)"/>
+      <SubTree ID="ApproachArm(t2)"/>
+      <SubTree ID="UnloadSample(t3)"/>
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="approach_arm"
+            editable="true">
+      <output_port name="arm"/>
+      <input_port name="wait_duration_sec"/>
+    </Action>
+    <Action ID="approach_nurse"
+            editable="true">
+      <output_port name="nurse"/>
+      <input_port name="wait_duration_sec"/>
+    </Action>
+    <Condition ID="authenticate_nurse"
+               editable="true">
+      <input_port name="nurse"/>
+      <input_port name="number"/>
+    </Condition>
+    <Action ID="close_drawer"
+            editable="true">
+      <output_port name="robot"/>
+      <input_port name="wait_duration_sec"/>
+    </Action>
+    <Condition ID="deposit"
+               editable="true">
+      <output_port name="is_deposited"/>
+      <input_port name="wait_duration_sec"/>
+    </Condition>
+    <Action ID="navTo"
+            editable="true">
+      <input_port name="x"/>
+      <input_port name="y"/>
+      <input_port name="yaw"/>
+    </Action>
+    <Action ID="open_drawer"
+            editable="true">
+      <output_port name="robot"/>
+      <input_port name="wait_duration_sec"/>
+    </Action>
+    <Action ID="pickup_sample"
+            editable="true">
+      <output_port name="is_picked"/>
+      <input_port name="wait_duration_sec"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>

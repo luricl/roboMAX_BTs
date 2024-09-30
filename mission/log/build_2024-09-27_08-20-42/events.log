@@ -1,0 +1,230 @@
+[0.000000] (-) TimerEvent: {}
+[0.000312] (rome_bt) JobQueued: {'identifier': 'rome_bt', 'dependencies': OrderedDict()}
+[0.000462] (rome_sim) JobQueued: {'identifier': 'rome_sim', 'dependencies': OrderedDict()}
+[0.000551] (rome_bt) JobStarted: {'identifier': 'rome_bt'}
+[0.004990] (rome_sim) JobStarted: {'identifier': 'rome_sim'}
+[0.009449] (rome_bt) JobProgress: {'identifier': 'rome_bt', 'progress': 'cmake'}
+[0.009810] (rome_bt) Command: {'cmd': ['/usr/bin/cmake', '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt', '-DCMAKE_INSTALL_PREFIX=/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt'], 'cwd': '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luricl'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/luricl'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('ASDF_DIR', '/home/luricl/.asdf'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/luricl/.asdf'), ('TERM_PROGRAM_VERSION', '1.93.1'), ('DESKTOP_SESSION', 'pop'), ('NVM_BIN', '/home/luricl/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/luricl/.nvm/versions/node/v18.20.3/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'pop'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3204'), ('MAVEN_HOME', '/home/luricl/.sdkman/candidates/maven/current'), ('SYSTEMD_EXEC_PID', '3381'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10518'), ('NVM_DIR', '/home/luricl/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'luricl'), ('SDKMAN_CANDIDATES_API', 'https://api.sdkman.io/2'), ('JOURNAL_STREAM', '9:27171'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luricl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('RBENV_SHELL', 'bash'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/luricl/.rbenv/shims:/home/luricl/.rbenv/bin:/home/luricl/.local/bin:/home/luricl/miniconda3/condabin:/home/luricl/.sdkman/candidates/maven/current/bin:/home/luricl/.sdkman/candidates/java/current/bin:/opt/ros/humble/bin:/home/luricl/.asdf/shims:/home/luricl/.asdf/bin:/home/luricl/.nvm/versions/node/v18.20.3/bin:/home/luricl/.rbenv/shims:/home/luricl/.rbenv/bin:/home/luricl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/luricl/.local/share/coursier/bin:/home/luricl/.local/bin:/home/luricl/.local/share/coursier/bin:/home/luricl/.local/bin'), ('SESSION_MANAGER', 'local/hal9000:@/tmp/.ICE-unix/3353,unix/hal9000:/tmp/.ICE-unix/3353'), ('SDKMAN_CANDIDATES_DIR', '/home/luricl/.sdkman/candidates'), ('INVOCATION_ID', 'fcac1bdba3c146c98b9f406a272dd61b'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'pop'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-100016e37e.sock'), ('SDKMAN_DIR', '/home/luricl/.sdkman'), ('SDKMAN_PLATFORM', 'linuxx64'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '126'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/luricl/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'pop:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'pop'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/home/luricl/.sdkman/candidates/java/current'), ('PWD', '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-pop:/etc/xdg'), ('CONDA_EXE', '/home/luricl/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/pop:/usr/share/gnome:/home/luricl/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.096053] (rome_bt) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099912] (-) TimerEvent: {}
+[0.158670] (rome_bt) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.166601] (rome_bt) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200101] (-) TimerEvent: {}
+[0.222767] (rome_bt) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.228350] (rome_bt) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.228621] (rome_bt) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.229254] (rome_bt) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.233366] (rome_bt) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.291308] (rome_bt) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.295912] (rome_bt) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.296023] (rome_bt) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.296397] (rome_bt) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.300287] (-) TimerEvent: {}
+[0.302125] (rome_bt) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400478] (-) TimerEvent: {}
+[0.408098] (rome_bt) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.441536] (rome_sim) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/rome_sim', 'build', '--build-base', '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build', 'install', '--record', '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_sim', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'luricl', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/luricl', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'ASDF_DIR': '/home/luricl/.asdf', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/luricl/.asdf', 'TERM_PROGRAM_VERSION': '1.93.1', 'DESKTOP_SESSION': 'pop', 'NVM_BIN': '/home/luricl/.nvm/versions/node/v18.20.3/bin', 'NVM_INC': '/home/luricl/.nvm/versions/node/v18.20.3/include/node', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'pop', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '3204', 'MAVEN_HOME': '/home/luricl/.sdkman/candidates/maven/current', 'SYSTEMD_EXEC_PID': '3381', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '10518', 'NVM_DIR': '/home/luricl/.nvm', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'luricl', 'SDKMAN_CANDIDATES_API': 'https://api.sdkman.io/2', 'JOURNAL_STREAM': '9:27171', '_': '/usr/local/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luricl', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'RBENV_SHELL': 'bash', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/luricl/.rbenv/shims:/home/luricl/.rbenv/bin:/home/luricl/.local/bin:/home/luricl/miniconda3/condabin:/home/luricl/.sdkman/candidates/maven/current/bin:/home/luricl/.sdkman/candidates/java/current/bin:/opt/ros/humble/bin:/home/luricl/.asdf/shims:/home/luricl/.asdf/bin:/home/luricl/.nvm/versions/node/v18.20.3/bin:/home/luricl/.rbenv/shims:/home/luricl/.rbenv/bin:/home/luricl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/luricl/.local/share/coursier/bin:/home/luricl/.local/bin:/home/luricl/.local/share/coursier/bin:/home/luricl/.local/bin', 'SESSION_MANAGER': 'local/hal9000:@/tmp/.ICE-unix/3353,unix/hal9000:/tmp/.ICE-unix/3353', 'SDKMAN_CANDIDATES_DIR': '/home/luricl/.sdkman/candidates', 'INVOCATION_ID': 'fcac1bdba3c146c98b9f406a272dd61b', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'pop', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-100016e37e.sock', 'SDKMAN_DIR': '/home/luricl/.sdkman', 'SDKMAN_PLATFORM': 'linuxx64', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '126', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/luricl/miniconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'pop:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'pop', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'JAVA_HOME': '/home/luricl/.sdkman/candidates/java/current', 'PWD': '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-pop:/etc/xdg', 'CONDA_EXE': '/home/luricl/miniconda3/bin/conda', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/pop:/usr/share/gnome:/home/luricl/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/', 'PYTHONPATH': '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/prefix_override:/usr/local/lib/python3.10/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.484794] (rome_bt) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.500618] (-) TimerEvent: {}
+[0.522676] (rome_bt) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.526872] (rome_bt) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.534573] (rome_bt) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.544447] (rome_bt) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.556574] (rome_bt) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.590033] (rome_bt) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.592052] (rome_bt) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.592807] (rome_sim) StdoutLine: {'line': b'running egg_info\n'}
+[0.593087] (rome_sim) StdoutLine: {'line': b'creating ../build/rome_sim/rome_sim.egg-info\n'}
+[0.593183] (rome_sim) StdoutLine: {'line': b'writing ../build/rome_sim/rome_sim.egg-info/PKG-INFO\n'}
+[0.593325] (rome_sim) StdoutLine: {'line': b'writing dependency_links to ../build/rome_sim/rome_sim.egg-info/dependency_links.txt\n'}
+[0.593401] (rome_sim) StdoutLine: {'line': b'writing entry points to ../build/rome_sim/rome_sim.egg-info/entry_points.txt\n'}
+[0.593436] (rome_sim) StdoutLine: {'line': b'writing requirements to ../build/rome_sim/rome_sim.egg-info/requires.txt\n'}
+[0.593468] (rome_sim) StdoutLine: {'line': b'writing top-level names to ../build/rome_sim/rome_sim.egg-info/top_level.txt\n'}
+[0.593511] (rome_sim) StdoutLine: {'line': b"writing manifest file '../build/rome_sim/rome_sim.egg-info/SOURCES.txt'\n"}
+[0.594436] (rome_sim) StdoutLine: {'line': b"reading manifest file '../build/rome_sim/rome_sim.egg-info/SOURCES.txt'\n"}
+[0.594765] (rome_sim) StdoutLine: {'line': b"writing manifest file '../build/rome_sim/rome_sim.egg-info/SOURCES.txt'\n"}
+[0.594850] (rome_sim) StdoutLine: {'line': b'running build\n'}
+[0.594906] (rome_sim) StdoutLine: {'line': b'running build_py\n'}
+[0.594938] (rome_sim) StdoutLine: {'line': b'creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build\n'}
+[0.594970] (rome_sim) StdoutLine: {'line': b'creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build/lib\n'}
+[0.595018] (rome_sim) StdoutLine: {'line': b'creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build/lib/rome_sim\n'}
+[0.595067] (rome_sim) StdoutLine: {'line': b'copying rome_sim/__init__.py -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build/lib/rome_sim\n'}
+[0.595114] (rome_sim) StdoutLine: {'line': b'running install\n'}
+[0.595233] (rome_sim) StdoutLine: {'line': b'running install_lib\n'}
+[0.595788] (rome_sim) StdoutLine: {'line': b'creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages/rome_sim\n'}
+[0.595838] (rome_sim) StdoutLine: {'line': b'copying /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build/lib/rome_sim/__init__.py -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages/rome_sim\n'}
+[0.596050] (rome_sim) StdoutLine: {'line': b'byte-compiling /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages/rome_sim/__init__.py to __init__.cpython-310.pyc\n'}
+[0.596157] (rome_sim) StdoutLine: {'line': b'running install_data\n'}
+[0.596205] (rome_sim) StdoutLine: {'line': b'creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/ament_index\n'}
+[0.596252] (rome_sim) StdoutLine: {'line': b'creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/ament_index/resource_index\n'}
+[0.596297] (rome_sim) StdoutLine: {'line': b'creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/ament_index/resource_index/packages\n'}
+[0.596344] (rome_sim) StdoutLine: {'line': b'copying resource/rome_sim -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/ament_index/resource_index/packages\n'}
+[0.596390] (rome_sim) StdoutLine: {'line': b'copying package.xml -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim\n'}
+[0.596434] (rome_sim) StdoutLine: {'line': b'copying launch/tb4_sim_bringup.launch.py -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim\n'}
+[0.596479] (rome_sim) StdoutLine: {'line': b'creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim/params\n'}
+[0.596523] (rome_sim) StdoutLine: {'line': b'copying params/nav2_params.yaml -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim/params/\n'}
+[0.596658] (rome_sim) StdoutLine: {'line': b'creating /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim/maps\n'}
+[0.596701] (rome_sim) StdoutLine: {'line': b'copying maps/warehouse.yaml -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim/maps/\n'}
+[0.596744] (rome_sim) StdoutLine: {'line': b'copying maps/warehouse.pgm -> /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/share/rome_sim/maps/\n'}
+[0.598736] (rome_sim) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.599800] (rome_sim) StdoutLine: {'line': b'Copying ../build/rome_sim/rome_sim.egg-info to /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages/rome_sim-0.0.0-py3.10.egg-info\n'}
+[0.600055] (rome_sim) StdoutLine: {'line': b'running install_scripts\n'}
+[0.600691] (-) TimerEvent: {}
+[0.614752] (rome_sim) StdoutLine: {'line': b"writing list of installed files to '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/install.log'\n"}
+[0.634834] (rome_sim) CommandEnded: {'returncode': 0}
+[0.642018] (rome_sim) JobEnded: {'identifier': 'rome_sim', 'rc': 0}
+[0.664884] (rome_bt) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.686673] (rome_bt) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.700837] (-) TimerEvent: {}
+[0.717860] (rome_bt) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.726706] (rome_bt) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.777959] (rome_bt) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.778167] (rome_bt) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800956] (-) TimerEvent: {}
+[0.836048] (rome_bt) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.836885] (rome_bt) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.876346] (rome_bt) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[0.901150] (-) TimerEvent: {}
+[0.902260] (rome_bt) StdoutLine: {'line': b'-- Found nav2_util: 1.1.16 (/opt/ros/humble/share/nav2_util/cmake)\n'}
+[1.001334] (-) TimerEvent: {}
+[1.005468] (rome_bt) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.006501] (rome_bt) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.006579] (rome_bt) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.043219] (rome_bt) StdoutLine: {'line': b'-- Found nav2_core: 1.1.16 (/opt/ros/humble/share/nav2_core/cmake)\n'}
+[1.101529] (-) TimerEvent: {}
+[1.135490] (rome_bt) StdoutLine: {'line': b'-- Found nav2_behavior_tree: 1.1.16 (/opt/ros/humble/share/nav2_behavior_tree/cmake)\n'}
+[1.201735] (-) TimerEvent: {}
+[1.302073] (-) TimerEvent: {}
+[1.331643] (rome_bt) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.387477] (rome_bt) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.388384] (rome_bt) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.388655] (rome_bt) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/include\n'}
+[1.388723] (rome_bt) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.389595] (rome_bt) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.389674] (rome_bt) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.390062] (rome_bt) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.390501] (rome_bt) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.390970] (rome_bt) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.391799] (rome_bt) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.391881] (rome_bt) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.392216] (rome_bt) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.393262] (rome_bt) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.402186] (-) TimerEvent: {}
+[1.472248] (rome_bt) StdoutLine: {'line': b'-- Generating done\n'}
+[1.473549] (rome_bt) StdoutLine: {'line': b'-- Build files have been written to: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt\n'}
+[1.484423] (rome_bt) CommandEnded: {'returncode': 0}
+[1.484947] (rome_bt) JobProgress: {'identifier': 'rome_bt', 'progress': 'build'}
+[1.485395] (rome_bt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt', '--', '-j12', '-l12'], 'cwd': '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luricl'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/luricl'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('ASDF_DIR', '/home/luricl/.asdf'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/luricl/.asdf'), ('TERM_PROGRAM_VERSION', '1.93.1'), ('DESKTOP_SESSION', 'pop'), ('NVM_BIN', '/home/luricl/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/luricl/.nvm/versions/node/v18.20.3/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'pop'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3204'), ('MAVEN_HOME', '/home/luricl/.sdkman/candidates/maven/current'), ('SYSTEMD_EXEC_PID', '3381'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10518'), ('NVM_DIR', '/home/luricl/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'luricl'), ('SDKMAN_CANDIDATES_API', 'https://api.sdkman.io/2'), ('JOURNAL_STREAM', '9:27171'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luricl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('RBENV_SHELL', 'bash'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/luricl/.rbenv/shims:/home/luricl/.rbenv/bin:/home/luricl/.local/bin:/home/luricl/miniconda3/condabin:/home/luricl/.sdkman/candidates/maven/current/bin:/home/luricl/.sdkman/candidates/java/current/bin:/opt/ros/humble/bin:/home/luricl/.asdf/shims:/home/luricl/.asdf/bin:/home/luricl/.nvm/versions/node/v18.20.3/bin:/home/luricl/.rbenv/shims:/home/luricl/.rbenv/bin:/home/luricl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/luricl/.local/share/coursier/bin:/home/luricl/.local/bin:/home/luricl/.local/share/coursier/bin:/home/luricl/.local/bin'), ('SESSION_MANAGER', 'local/hal9000:@/tmp/.ICE-unix/3353,unix/hal9000:/tmp/.ICE-unix/3353'), ('SDKMAN_CANDIDATES_DIR', '/home/luricl/.sdkman/candidates'), ('INVOCATION_ID', 'fcac1bdba3c146c98b9f406a272dd61b'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'pop'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-100016e37e.sock'), ('SDKMAN_DIR', '/home/luricl/.sdkman'), ('SDKMAN_PLATFORM', 'linuxx64'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '126'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/luricl/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'pop:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'pop'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/home/luricl/.sdkman/candidates/java/current'), ('PWD', '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-pop:/etc/xdg'), ('CONDA_EXE', '/home/luricl/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/pop:/usr/share/gnome:/home/luricl/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.502302] (-) TimerEvent: {}
+[1.525878] (rome_bt) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o\x1b[0m\n'}
+[1.602395] (-) TimerEvent: {}
+[1.702727] (-) TimerEvent: {}
+[1.803065] (-) TimerEvent: {}
+[1.903401] (-) TimerEvent: {}
+[2.003744] (-) TimerEvent: {}
+[2.104086] (-) TimerEvent: {}
+[2.204368] (-) TimerEvent: {}
+[2.304703] (-) TimerEvent: {}
+[2.405030] (-) TimerEvent: {}
+[2.505383] (-) TimerEvent: {}
+[2.605698] (-) TimerEvent: {}
+[2.706036] (-) TimerEvent: {}
+[2.806379] (-) TimerEvent: {}
+[2.906734] (-) TimerEvent: {}
+[3.007098] (-) TimerEvent: {}
+[3.107380] (-) TimerEvent: {}
+[3.207719] (-) TimerEvent: {}
+[3.308054] (-) TimerEvent: {}
+[3.408407] (-) TimerEvent: {}
+[3.508658] (-) TimerEvent: {}
+[3.609018] (-) TimerEvent: {}
+[3.709360] (-) TimerEvent: {}
+[3.809635] (-) TimerEvent: {}
+[3.909968] (-) TimerEvent: {}
+[4.010316] (-) TimerEvent: {}
+[4.110673] (-) TimerEvent: {}
+[4.211008] (-) TimerEvent: {}
+[4.311361] (-) TimerEvent: {}
+[4.411737] (-) TimerEvent: {}
+[4.512071] (-) TimerEvent: {}
+[4.612451] (-) TimerEvent: {}
+[4.712805] (-) TimerEvent: {}
+[4.813156] (-) TimerEvent: {}
+[4.913537] (-) TimerEvent: {}
+[5.013890] (-) TimerEvent: {}
+[5.114250] (-) TimerEvent: {}
+[5.214618] (-) TimerEvent: {}
+[5.314980] (-) TimerEvent: {}
+[5.415327] (-) TimerEvent: {}
+[5.515561] (-) TimerEvent: {}
+[5.615887] (-) TimerEvent: {}
+[5.716206] (-) TimerEvent: {}
+[5.816541] (-) TimerEvent: {}
+[5.916783] (-) TimerEvent: {}
+[6.017142] (-) TimerEvent: {}
+[6.117362] (-) TimerEvent: {}
+[6.217695] (-) TimerEvent: {}
+[6.318019] (-) TimerEvent: {}
+[6.418351] (-) TimerEvent: {}
+[6.518680] (-) TimerEvent: {}
+[6.619017] (-) TimerEvent: {}
+[6.719346] (-) TimerEvent: {}
+[6.819682] (-) TimerEvent: {}
+[6.920017] (-) TimerEvent: {}
+[7.020404] (-) TimerEvent: {}
+[7.120761] (-) TimerEvent: {}
+[7.221114] (-) TimerEvent: {}
+[7.321462] (-) TimerEvent: {}
+[7.421817] (-) TimerEvent: {}
+[7.522144] (-) TimerEvent: {}
+[7.622384] (-) TimerEvent: {}
+[7.722716] (-) TimerEvent: {}
+[7.823048] (-) TimerEvent: {}
+[7.923382] (-) TimerEvent: {}
+[8.023713] (-) TimerEvent: {}
+[8.124039] (-) TimerEvent: {}
+[8.224388] (-) TimerEvent: {}
+[8.324736] (-) TimerEvent: {}
+[8.425086] (-) TimerEvent: {}
+[8.525446] (-) TimerEvent: {}
+[8.570105] (rome_bt) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable bt_executor\x1b[0m\n'}
+[8.625651] (-) TimerEvent: {}
+[8.725928] (-) TimerEvent: {}
+[8.826266] (-) TimerEvent: {}
+[8.926617] (-) TimerEvent: {}
+[9.026958] (-) TimerEvent: {}
+[9.127298] (-) TimerEvent: {}
+[9.227535] (-) TimerEvent: {}
+[9.231439] (rome_bt) StdoutLine: {'line': b'[100%] Built target bt_executor\n'}
+[9.239672] (rome_bt) CommandEnded: {'returncode': 0}
+[9.258213] (rome_bt) JobProgress: {'identifier': 'rome_bt', 'progress': 'install'}
+[9.265297] (rome_bt) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt'], 'cwd': '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luricl'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/luricl'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('ASDF_DIR', '/home/luricl/.asdf'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/luricl/.asdf'), ('TERM_PROGRAM_VERSION', '1.93.1'), ('DESKTOP_SESSION', 'pop'), ('NVM_BIN', '/home/luricl/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/luricl/.nvm/versions/node/v18.20.3/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'pop'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3204'), ('MAVEN_HOME', '/home/luricl/.sdkman/candidates/maven/current'), ('SYSTEMD_EXEC_PID', '3381'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10518'), ('NVM_DIR', '/home/luricl/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'luricl'), ('SDKMAN_CANDIDATES_API', 'https://api.sdkman.io/2'), ('JOURNAL_STREAM', '9:27171'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luricl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('RBENV_SHELL', 'bash'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/luricl/.rbenv/shims:/home/luricl/.rbenv/bin:/home/luricl/.local/bin:/home/luricl/miniconda3/condabin:/home/luricl/.sdkman/candidates/maven/current/bin:/home/luricl/.sdkman/candidates/java/current/bin:/opt/ros/humble/bin:/home/luricl/.asdf/shims:/home/luricl/.asdf/bin:/home/luricl/.nvm/versions/node/v18.20.3/bin:/home/luricl/.rbenv/shims:/home/luricl/.rbenv/bin:/home/luricl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/luricl/.local/share/coursier/bin:/home/luricl/.local/bin:/home/luricl/.local/share/coursier/bin:/home/luricl/.local/bin'), ('SESSION_MANAGER', 'local/hal9000:@/tmp/.ICE-unix/3353,unix/hal9000:/tmp/.ICE-unix/3353'), ('SDKMAN_CANDIDATES_DIR', '/home/luricl/.sdkman/candidates'), ('INVOCATION_ID', 'fcac1bdba3c146c98b9f406a272dd61b'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'pop'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-100016e37e.sock'), ('SDKMAN_DIR', '/home/luricl/.sdkman'), ('SDKMAN_PLATFORM', 'linuxx64'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '126'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/luricl/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'pop:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'pop'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/home/luricl/.sdkman/candidates/java/current'), ('PWD', '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-pop:/etc/xdg'), ('CONDA_EXE', '/home/luricl/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/pop:/usr/share/gnome:/home/luricl/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.270596] (rome_bt) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.270712] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees\n'}
+[9.270746] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees/lab_samples_bt.xml\n'}
+[9.270872] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees/plugins.txt\n'}
+[9.271023] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees/bt_example1.xml\n'}
+[9.271209] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees/bt_example3.xml\n'}
+[9.271293] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/behavior_trees/bt_example2.xml\n'}
+[9.271368] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/launch\n'}
+[9.271410] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/launch/execute_bt.launch.py\n'}
+[9.271508] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/lib/rome_bt/bt_executor\n'}
+[9.273911] (rome_bt) StdoutLine: {'line': b'-- Set runtime path of "/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/lib/rome_bt/bt_executor" to ""\n'}
+[9.273950] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/ament_index/resource_index/package_run_dependencies/rome_bt\n'}
+[9.273998] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/ament_index/resource_index/parent_prefix_path/rome_bt\n'}
+[9.274043] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/environment/ament_prefix_path.sh\n'}
+[9.274081] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/environment/ament_prefix_path.dsv\n'}
+[9.274124] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/environment/path.sh\n'}
+[9.274167] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/environment/path.dsv\n'}
+[9.274215] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/local_setup.bash\n'}
+[9.274275] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/local_setup.sh\n'}
+[9.274321] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/local_setup.zsh\n'}
+[9.274365] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/local_setup.dsv\n'}
+[9.274410] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/package.dsv\n'}
+[9.274473] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/ament_index/resource_index/packages/rome_bt\n'}
+[9.274533] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/cmake/rome_btConfig.cmake\n'}
+[9.274578] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/cmake/rome_btConfig-version.cmake\n'}
+[9.274620] (rome_bt) StdoutLine: {'line': b'-- Installing: /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_bt/share/rome_bt/package.xml\n'}
+[9.275814] (rome_bt) CommandEnded: {'returncode': 0}
+[9.303990] (rome_bt) JobEnded: {'identifier': 'rome_bt', 'rc': 0}
+[9.304556] (-) EventReactorShutdown: {}

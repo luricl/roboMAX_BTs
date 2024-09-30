@@ -1,0 +1,44 @@
+[0.013s] Invoking command in '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim:/opt/ros/humble /usr/bin/cmake --build /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt -- -j12 -l12
+[0.109s] [35m[1mConsolidate compiler generated dependencies of target bt_executor[0m
+[0.124s] [ 50%] [32mBuilding CXX object CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o[0m
+[1.985s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:[m[K In member function ‘[01m[Kvoid BTExecutor::create_behavior_tree()[m[K’:
+[1.985s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:76:21:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KBT::NodeBuilder builder[m[K’
+[1.985s]    76 |     BT::NodeBuilder [01;31m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[1.985s]       |                     [01;31m[K^~~~~~~[m[K
+[1.985s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:71:21:[m[K [01;36m[Knote: [m[K‘[01m[KBT::NodeBuilder builder[m[K’ previously declared here
+[1.985s]    71 |     BT::NodeBuilder [01;36m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[1.985s]       |                     [01;36m[K^~~~~~~[m[K
+[1.988s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:81:21:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KBT::NodeBuilder builder[m[K’
+[1.988s]    81 |     BT::NodeBuilder [01;31m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[1.988s]       |                     [01;31m[K^~~~~~~[m[K
+[1.988s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:71:21:[m[K [01;36m[Knote: [m[K‘[01m[KBT::NodeBuilder builder[m[K’ previously declared here
+[1.989s]    71 |     BT::NodeBuilder [01;36m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[1.989s]       |                     [01;36m[K^~~~~~~[m[K
+[1.992s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:86:21:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KBT::NodeBuilder builder[m[K’
+[1.992s]    86 |     BT::NodeBuilder [01;31m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[1.992s]       |                     [01;31m[K^~~~~~~[m[K
+[1.992s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:71:21:[m[K [01;36m[Knote: [m[K‘[01m[KBT::NodeBuilder builder[m[K’ previously declared here
+[1.992s]    71 |     BT::NodeBuilder [01;36m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[1.992s]       |                     [01;36m[K^~~~~~~[m[K
+[1.995s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:91:21:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KBT::NodeBuilder builder[m[K’
+[1.995s]    91 |     BT::NodeBuilder [01;31m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[1.995s]       |                     [01;31m[K^~~~~~~[m[K
+[1.995s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:71:21:[m[K [01;36m[Knote: [m[K‘[01m[KBT::NodeBuilder builder[m[K’ previously declared here
+[1.995s]    71 |     BT::NodeBuilder [01;36m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[1.995s]       |                     [01;36m[K^~~~~~~[m[K
+[1.999s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:96:21:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KBT::NodeBuilder builder[m[K’
+[1.999s]    96 |     BT::NodeBuilder [01;31m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[1.999s]       |                     [01;31m[K^~~~~~~[m[K
+[1.999s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:71:21:[m[K [01;36m[Knote: [m[K‘[01m[KBT::NodeBuilder builder[m[K’ previously declared here
+[1.999s]    71 |     BT::NodeBuilder [01;36m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[1.999s]       |                     [01;36m[K^~~~~~~[m[K
+[2.002s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:101:21:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KBT::NodeBuilder builder[m[K’
+[2.002s]   101 |     BT::NodeBuilder [01;31m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[2.002s]       |                     [01;31m[K^~~~~~~[m[K
+[2.002s] [01m[K/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_bt/src/bt_executor.cpp:71:21:[m[K [01;36m[Knote: [m[K‘[01m[KBT::NodeBuilder builder[m[K’ previously declared here
+[2.002s]    71 |     BT::NodeBuilder [01;36m[Kbuilder[m[K = [=](const std::string &name, const BT::NodeConfiguration &config){
+[2.002s]       |                     [01;36m[K^~~~~~~[m[K
+[4.002s] gmake[2]: *** [CMakeFiles/bt_executor.dir/build.make:76: CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o] Error 1
+[4.002s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_executor.dir/all] Error 2
+[4.002s] gmake: *** [Makefile:146: all] Error 2
+[4.004s] Invoked command in '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim:/opt/ros/humble /usr/bin/cmake --build /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_bt -- -j12 -l12

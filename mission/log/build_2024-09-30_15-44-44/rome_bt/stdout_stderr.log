@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target bt_executor[0m
+[ 50%] [32m[1mLinking CXX executable bt_executor[0m
+/usr/bin/ld: CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o: in function `std::_MakeUniq<navToNode>::__single_object std::make_unique<navToNode, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, BT::NodeConfiguration const&, std::shared_ptr<rclcpp::Node> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, BT::NodeConfiguration const&, std::shared_ptr<rclcpp::Node>&&)':
+bt_executor.cpp:(.text._ZSt11make_uniqueI9navToNodeJRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN2BT17NodeConfigurationESt10shared_ptrIN6rclcpp4NodeEEEENSt9_MakeUniqIT_E15__single_objectEDpOT0_[_ZSt11make_uniqueI9navToNodeJRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN2BT17NodeConfigurationESt10shared_ptrIN6rclcpp4NodeEEEENSt9_MakeUniqIT_E15__single_objectEDpOT0_]+0x8b): undefined reference to `navToNode::navToNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, BT::NodeConfiguration const&, std::shared_ptr<rclcpp::Node>)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/bt_executor.dir/build.make:460: bt_executor] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_executor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

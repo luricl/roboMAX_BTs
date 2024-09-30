@@ -1,0 +1,20 @@
+[0.470s] Invoking command in '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_sim': PYTHONPATH=/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/prefix_override:/usr/local/lib/python3.10/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/rome_sim build --build-base /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build install --record /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/install.log --single-version-externally-managed install_data
+[0.633s] running egg_info
+[0.634s] writing ../build/rome_sim/rome_sim.egg-info/PKG-INFO
+[0.634s] writing dependency_links to ../build/rome_sim/rome_sim.egg-info/dependency_links.txt
+[0.634s] writing entry points to ../build/rome_sim/rome_sim.egg-info/entry_points.txt
+[0.635s] writing requirements to ../build/rome_sim/rome_sim.egg-info/requires.txt
+[0.635s] writing top-level names to ../build/rome_sim/rome_sim.egg-info/top_level.txt
+[0.636s] reading manifest file '../build/rome_sim/rome_sim.egg-info/SOURCES.txt'
+[0.636s] writing manifest file '../build/rome_sim/rome_sim.egg-info/SOURCES.txt'
+[0.637s] running build
+[0.637s] running build_py
+[0.637s] running install
+[0.637s] running install_lib
+[0.638s] running install_data
+[0.638s] running install_egg_info
+[0.639s] removing '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages/rome_sim-0.0.0-py3.10.egg-info' (and everything under it)
+[0.640s] Copying ../build/rome_sim/rome_sim.egg-info to /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages/rome_sim-0.0.0-py3.10.egg-info
+[0.640s] running install_scripts
+[0.655s] writing list of installed files to '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/install.log'
+[0.674s] Invoked command in '/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/rome_sim' returned '0': PYTHONPATH=/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/prefix_override:/usr/local/lib/python3.10/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/install/rome_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/rome_sim build --build-base /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/build install --record /home/luricl/Documents/UnB/PIBIC/code/lab_samples_logistics/mission/build/rome_sim/install.log --single-version-externally-managed install_data
