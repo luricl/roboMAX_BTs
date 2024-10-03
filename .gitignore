@@ -1,0 +1,4 @@
+mission/build/
+mission/install/
+mission/log/
+*.vscode/
