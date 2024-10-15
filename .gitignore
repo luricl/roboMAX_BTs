@@ -1,4 +1,4 @@
-mission/build/
-mission/install/
-mission/log/
+build/
+install/
+log/
 *.vscode/
