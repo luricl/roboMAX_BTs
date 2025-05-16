@@ -1,4 +1,4 @@
-# Adadoted from https://github.com/turtlebot/turtlebot4_simulator/blob/humble/turtlebot4_ignition_bringup/launch/turtlebot4_ignition.launch.py
+# Adapdoted from https://github.com/turtlebot/turtlebot4_simulator/blob/humble/turtlebot4_ignition_bringup/launch/turtlebot4_ignition.launch.py
 from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
@@ -51,7 +51,6 @@ def generate_launch_description():
     robot_spawn_launch = PathJoinSubstitution(
         [pkg_turtlebot4_ignition_bringup, 'launch', 'turtlebot4_spawn.launch.py'])
 
-    #TODO Make UnB map and add the .sdf here
     ignition = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([ignition_launch]),
         launch_arguments=[

@@ -1,13 +1,13 @@
 #include "bt_executor.h"
-#include "approach_arm_node.cpp"
-#include "approach_nurse_node.cpp"
-#include "authenticate_nurse_node.cpp"
-// #include "close_drawer_node.cpp"
-#include "deposit_node.cpp"
-#include "drawer_interface_node.cpp"
+#include "request_human_assistance_node.cpp"
+#include "approach_person_node.cpp"
 #include "navTo_node.cpp"
-// #include "open_drawer_node.cpp"
-#include "pickup_sample_node.cpp"
+#include "authenticate_person_node.cpp"
+#include "open_drawer_node.cpp"
+#include "deposit_node.cpp"
+#include "approach_arm_node.cpp"
+#include "send_ready_signal_node.cpp"
+#include "return_to_base_node.cpp"
 
 
 BTExecutor::BTExecutor(const std::string &node_name): rclcpp::Node(node_name) {
@@ -75,19 +75,19 @@ void BTExecutor::create_behavior_tree(){
     factory_.registerBuilder<approachArmNode>("approach_arm", builder);
 
     builder = [=](const std::string &name, const BT::NodeConfiguration &config){
-        return std::make_unique<approachNurseNode>(name, config, shared_from_this());
+        return std::make_unique<returnToBaseNode>(name, config, shared_from_this());
     };
-    factory_.registerBuilder<approachNurseNode>("approach_nurse", builder);
+    factory_.registerBuilder<returnToBaseNode>("return_to_base", builder);
 
     builder = [=](const std::string &name, const BT::NodeConfiguration &config){
-        return std::make_unique<authenticateNurseNode>(name, config, shared_from_this());
+        return std::make_unique<approachPersonNode>(name, config, shared_from_this());
     };
-    factory_.registerBuilder<authenticateNurseNode>("authenticate_nurse", builder);
+    factory_.registerBuilder<approachPersonNode>("approach_person", builder);
 
-    // builder = [=](const std::string &name, const BT::NodeConfiguration &config){
-    //     return std::make_unique<closeDrawerNode>(name, config, shared_from_this());
-    // };
-    // factory_.registerBuilder<closeDrawerNode>("close_drawer", builder);
+    builder = [=](const std::string &name, const BT::NodeConfiguration &config){
+        return std::make_unique<authenticatePersonNode>(name, config, shared_from_this());
+    };
+    factory_.registerBuilder<authenticatePersonNode>("authenticate_person", builder);
 
     builder = [=](const std::string &name, const BT::NodeConfiguration &config){
         return std::make_unique<depositNode>(name, config, shared_from_this());
@@ -95,24 +95,29 @@ void BTExecutor::create_behavior_tree(){
     factory_.registerBuilder<depositNode>("deposit", builder);
     
     builder = [=](const std::string &name, const BT::NodeConfiguration &config){
-        return std::make_unique<drawerInterfaceNode>(name, config, shared_from_this());
+        return std::make_unique<openDrawerNode>(name, config, shared_from_this());
     };
-    factory_.registerBuilder<drawerInterfaceNode>("drawer_interface", builder);
+    factory_.registerBuilder<openDrawerNode>("open_drawer", builder);
+    
+    // builder = [=](const std::string &name, const BT::NodeConfiguration &config){
+    //     return std::make_unique<drawerInterfaceNode>(name, config, shared_from_this());
+    // };
+    // factory_.registerBuilder<drawerInterfaceNode>("drawer_interface", builder);
     
     builder = [=](const std::string &name, const BT::NodeConfiguration &config){
         return std::make_unique<navToNode>(name, config, shared_from_this());
     };
     factory_.registerBuilder<navToNode>("navTo", builder);
     
-    // builder = [=](const std::string &name, const BT::NodeConfiguration &config){
-    //     return std::make_unique<openDrawerNode>(name, config, shared_from_this());
-    // };
-    // factory_.registerBuilder<openDrawerNode>("open_drawer", builder);
-
     builder = [=](const std::string &name, const BT::NodeConfiguration &config){
-        return std::make_unique<pickupSampleNode>(name, config, shared_from_this());
+        return std::make_unique<requestHumanAssistanceNode>(name, config, shared_from_this());
     };
-    factory_.registerBuilder<pickupSampleNode>("pickup_sample", builder);
+    factory_.registerBuilder<requestHumanAssistanceNode>("request_human_assistance", builder);
+    
+    builder = [=](const std::string &name, const BT::NodeConfiguration &config){
+        return std::make_unique<sendReadySignalNode>(name, config, shared_from_this());
+    };
+    factory_.registerBuilder<sendReadySignalNode>("send_ready_signal", builder);
 
     // Registering nav2 nodes
     RCLCPP_INFO(get_logger(), "Registering Nav2 Plugins");

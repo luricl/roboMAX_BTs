@@ -3,7 +3,7 @@
 
 depositNode::depositNode(const std::string &xml_tag_name,
                              const BT::NodeConfiguration &conf,
-                             rclcpp::Node::SharedPtr node_ptr): BT::ConditionNode(xml_tag_name, conf){
+                             rclcpp::Node::SharedPtr node_ptr): BT::ConditionNode(xml_tag_name, conf), node_ptr_(node_ptr){
     std::string topic = "deposit";
 
     auto qos = rclcpp::SystemDefaultsQoS();
@@ -43,6 +43,6 @@ BT::NodeStatus depositNode::tick(){
         return BT::NodeStatus::FAILURE;
 
     RCLCPP_INFO_STREAM(node_ptr_->get_logger(), "deposit signal RECIEVED\n");
-    setOutput("is_deposited", msg_);
+    setOutput("deposit_signal", msg_);
     return BT::NodeStatus::SUCCESS;
 }

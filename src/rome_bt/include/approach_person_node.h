@@ -7,16 +7,16 @@
 #include <string>
 
 
-class SubscriberNode: public BT::ConditionNode{
+class approachPersonNode: public BT::ConditionNode{
     public:
-        explicit SubscriberNode(const std::string &name,
+        explicit approachPersonNode(const std::string &name,
                                const BT::NodeConfiguration &config,
                                rclcpp::Node::SharedPtr node_ptr);
 
         BT::NodeStatus tick() override;
 
         static BT::PortsList providedPorts() {
-            return BT::PortsList {BT::OutputPort<std::string>("message"),
+            return BT::PortsList {BT::OutputPort<std::string>("person_id"),
                                   BT::InputPort<int>("wait_duration_sec")};
         }
 
@@ -25,6 +25,7 @@ class SubscriberNode: public BT::ConditionNode{
 
 
     private:
+        rclcpp::Node::SharedPtr node_ptr_;
         rclcpp::Subscription<std_msgs::msg::String>::SharedPtr str_subscriber_ptr_;
         std::string msg_;
 };

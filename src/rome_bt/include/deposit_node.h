@@ -16,7 +16,7 @@ class depositNode: public BT::ConditionNode{
         BT::NodeStatus tick() override;
 
         static BT::PortsList providedPorts() {
-            return BT::PortsList {BT::OutputPort<std::string>("is_deposited"),
+            return BT::PortsList {BT::OutputPort<std::string>("deposit_signal"),
                                   BT::InputPort<int>("wait_duration_sec")};
         }
 
@@ -25,7 +25,7 @@ class depositNode: public BT::ConditionNode{
 
 
     private:
-        rclcpp::Node::SharedPtr node_ptr_;
         rclcpp::Subscription<std_msgs::msg::String>::SharedPtr str_subscriber_ptr_;
+        rclcpp::Node::SharedPtr node_ptr_;
         std::string msg_;
 };

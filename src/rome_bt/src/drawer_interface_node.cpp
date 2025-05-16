@@ -21,6 +21,7 @@ void drawerInterfaceNode::update_msg(const std_msgs::msg::String::SharedPtr new_
 bool drawerInterfaceNode::wait_for_message(int wait_duration){
     rclcpp::WaitSet wait_set;
     wait_set.add_subscription(str_subscriber_ptr_);
+    RCLCPP_INFO_STREAM(node_ptr_->get_logger(), "waiting for response...\n");
     auto ret = wait_set.wait(std::chrono::seconds(wait_duration));
     if (ret.kind() == rclcpp::WaitResultKind::Ready) {
         std_msgs::msg::String::SharedPtr msg = std::make_shared<std_msgs::msg::String>();

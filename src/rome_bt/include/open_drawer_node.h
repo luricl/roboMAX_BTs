@@ -16,8 +16,7 @@ class openDrawerNode: public BT::ConditionNode{
         BT::NodeStatus tick() override;
 
         static BT::PortsList providedPorts() {
-            return BT::PortsList {BT::OutputPort<std::string>("robot"),
-                                  BT::InputPort<int>("wait_duration_sec")};
+            return BT::PortsList {BT::InputPort<int>("wait_duration_sec")};
         }
 
         void update_msg(const std_msgs::msg::String::SharedPtr new_msg);
@@ -25,6 +24,7 @@ class openDrawerNode: public BT::ConditionNode{
 
 
     private:
+        rclcpp::Node::SharedPtr node_ptr_;
         rclcpp::Subscription<std_msgs::msg::String>::SharedPtr str_subscriber_ptr_;
         std::string msg_;
 };

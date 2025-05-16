@@ -5,7 +5,6 @@ approachArmNode::approachArmNode(const std::string &xml_tag_name,
                              const BT::NodeConfiguration &conf,
                              rclcpp::Node::SharedPtr node_ptr): BT::ConditionNode(xml_tag_name, conf){
     
-    // change this
     std::string topic = "arm";
 
     auto qos = rclcpp::SystemDefaultsQoS();

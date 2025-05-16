@@ -1,57 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root BTCPP_format="4"
       main_tree_to_execute="main">
-  <BehaviorTree ID="ApproachArm(t2)">
+  <BehaviorTree ID="ApproachArm">
     <Sequence>
       <approach_arm arm="{arm_id}"
                     wait_duration_sec="60"/>
       <navTo x="4"
              y="1"
              yaw="-1.57"/>
+      <send_ready_signal message="ready_signal"
+                         number="5"/>
     </Sequence>
   </BehaviorTree>
 
-  <BehaviorTree ID="ApproachNurse(t0)">
+  <BehaviorTree ID="ApproachPerson">
     <Sequence>
-      <approach_nurse nurse="{nurse}"
-                      wait_duration_sec="60"/>
+      <approach_person person_id="{person_id}"
+                       wait_duration_sec="60"/>
       <navTo x="-1"
-             y="2"
+             y="1"
              yaw="-0.01"/>
-      <authenticate_nurse nurse="{nurse}"
-                          number="5"/>
+      <authenticate_person person="{person_id}"
+                           number="5"/>
     </Sequence>
   </BehaviorTree>
 
-  <BehaviorTree ID="PickSample(t1)">
+  <BehaviorTree ID="OpenDrawers">
     <Sequence>
-      <drawer_interface action="{state}"
-                        wait_duration_sec="60"/>
-      <deposit is_deposited="{deposit_signal}"
+      <open_drawer wait_duration_sec="60"/>
+      <deposit deposit_signal="{is_deposited}"
                wait_duration_sec="60"/>
-      <drawer_interface action="{state}"
-                        wait_duration_sec="60"/>
     </Sequence>
   </BehaviorTree>
 
-  <BehaviorTree ID="UnloadSample(t3)">
+  <BehaviorTree ID="UnloadSample">
     <Sequence>
-      <drawer_interface action="{state}"
-                        wait_duration_sec="60"/>
-      <pickup_sample is_picked="{pick_signal}"
-                     wait_duration_sec="60"/>
-      <drawer_interface action="{state}"
-                        wait_duration_sec="60"/>
+      <Fallback>
+        <SubTree ID="ApproachArm"/>
+        <request_human_assistance message="assistance requested"
+                                  number="5"/>
+      </Fallback>
+      <SubTree ID="OpenDrawers"/>
     </Sequence>
   </BehaviorTree>
 
   <BehaviorTree ID="main">
-    <Sequence>
-      <SubTree ID="ApproachNurse(t0)"/>
-      <SubTree ID="PickSample(t1)"/>
-      <SubTree ID="ApproachArm(t2)"/>
-      <SubTree ID="UnloadSample(t3)"/>
-    </Sequence>
+    <Fallback>
+      <Sequence>
+        <SubTree ID="ApproachPerson"/>
+        <SubTree ID="OpenDrawers"/>
+        <SubTree ID="UnloadSample"/>
+      </Sequence>
+      <return_to_base x="0"
+                      y="0"/>
+    </Fallback>
   </BehaviorTree>
 
   <!-- Description of Node Models (used by Groot) -->
@@ -61,36 +63,47 @@
       <output_port name="arm"/>
       <input_port name="wait_duration_sec"/>
     </Action>
-    <Action ID="approach_nurse"
+    <Action ID="approach_person"
             editable="true">
-      <output_port name="nurse"/>
+      <output_port name="person_id"/>
       <input_port name="wait_duration_sec"/>
     </Action>
-    <Condition ID="authenticate_nurse"
+    <Condition ID="authenticate_person"
                editable="true">
-      <input_port name="nurse"/>
+      <input_port name="person"/>
       <input_port name="number"/>
     </Condition>
     <Condition ID="deposit"
                editable="true">
-      <output_port name="is_deposited"/>
+      <output_port name="deposit_signal"/>
       <input_port name="wait_duration_sec"/>
     </Condition>
-    <Action ID="drawer_interface"
-            editable="true">
-      <output_port name="action"/>
-      <input_port name="wait_duration_sec"/>
-    </Action>
     <Action ID="navTo"
             editable="true">
       <input_port name="x"/>
       <input_port name="y"/>
       <input_port name="yaw"/>
     </Action>
-    <Action ID="pickup_sample"
+    <Action ID="open_drawer"
             editable="true">
-      <output_port name="is_picked"/>
       <input_port name="wait_duration_sec"/>
+    </Action>
+    <Action ID="request_human_assistance"
+            editable="true">
+      <input_port name="message"
+                  default="assistance requested"/>
+      <input_port name="number"
+                  default="5"/>
+    </Action>
+    <Action ID="return_to_base"
+            editable="true">
+      <input_port name="x"/>
+      <input_port name="y"/>
+    </Action>
+    <Action ID="send_ready_signal"
+            editable="true">
+      <input_port name="message"/>
+      <input_port name="number"/>
     </Action>
   </TreeNodesModel>
 

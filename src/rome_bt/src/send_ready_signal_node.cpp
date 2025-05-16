@@ -1,16 +1,16 @@
-#include "publisher_node.h"
+#include "send_ready_signal_node.h"
 
 
-PublisherNode::PublisherNode(const std::string &xml_tag_name,
+sendReadySignalNode::sendReadySignalNode(const std::string &xml_tag_name,
                              const BT::NodeConfiguration &conf,
-                             rclcpp::Node::SharedPtr node_ptr): BT::SyncActionNode(xml_tag_name, conf){
-    std::string topic = "hello";
+                             rclcpp::Node::SharedPtr node_ptr): BT::ConditionNode(xml_tag_name, conf){
+    std::string topic = "ready_signal";
     auto qos = rclcpp::SystemDefaultsQoS();
     qos.best_effort();
     str_publisher_ptr_ = node_ptr->create_publisher<std_msgs::msg::String>(topic, qos);
 }
 
-BT::NodeStatus PublisherNode::tick(){
+BT::NodeStatus sendReadySignalNode::tick(){
     std_msgs::msg::String str_msg;
     auto msg = getInput<std::string>("message");
     auto num_input = getInput<int>("number");
@@ -22,4 +22,3 @@ BT::NodeStatus PublisherNode::tick(){
     }
     return BT::NodeStatus::SUCCESS;
 }
-

@@ -16,7 +16,7 @@ class drawerInterfaceNode: public BT::ConditionNode{
         BT::NodeStatus tick() override;
 
         static BT::PortsList providedPorts() {
-            return BT::PortsList {BT::OutputPort<std::string>("action"),
+            return BT::PortsList {BT::OutputPort<std::string>("state"),
                                   BT::InputPort<int>("wait_duration_sec")};
         }
 
