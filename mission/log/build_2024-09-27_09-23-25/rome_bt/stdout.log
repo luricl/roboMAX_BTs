@@ -1,3 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target bt_executor[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o[0m
-[100%] [32m[1mLinking CXX executable bt_executor[0m
