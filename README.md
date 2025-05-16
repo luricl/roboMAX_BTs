@@ -42,7 +42,7 @@ The trees at `src/rome_bt/behavior_trees` can be executed with the following com
 ros2 launch rome_bt execute_bt.launch.py bt:="full/path/to/tree"
 ```
 
-## Creating a custom node plugin
+## Executing a BT
 
 The provided `rome_bt` package is used to develop and run behavior trees. Usually to develop nodes 
 we create a header file with all our definitions in /include and the actual code implementation in the /src directory.
