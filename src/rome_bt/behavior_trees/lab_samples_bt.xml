@@ -28,8 +28,7 @@
   <BehaviorTree ID="OpenDrawers">
     <Sequence>
       <open_drawer wait_duration_sec="60"/>
-      <deposit deposit_signal="{is_deposited}"
-               wait_duration_sec="60"/>
+      <wait_for_deposit wait_duration_sec="60"/>
     </Sequence>
   </BehaviorTree>
 
@@ -73,11 +72,6 @@
       <input_port name="person"/>
       <input_port name="number"/>
     </Condition>
-    <Condition ID="deposit"
-               editable="true">
-      <output_port name="deposit_signal"/>
-      <input_port name="wait_duration_sec"/>
-    </Condition>
     <Action ID="navTo"
             editable="true">
       <input_port name="x"/>
@@ -105,6 +99,10 @@
       <input_port name="message"/>
       <input_port name="number"/>
     </Action>
+    <Condition ID="wait_for_deposit"
+               editable="true">
+      <input_port name="wait_duration_sec"/>
+    </Condition>
   </TreeNodesModel>
 
 </root>

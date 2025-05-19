@@ -4,7 +4,7 @@
 #include "navTo_node.cpp"
 #include "authenticate_person_node.cpp"
 #include "open_drawer_node.cpp"
-#include "deposit_node.cpp"
+#include "wait_for_deposit_node.cpp"
 #include "approach_arm_node.cpp"
 #include "send_ready_signal_node.cpp"
 #include "return_to_base_node.cpp"
@@ -90,20 +90,15 @@ void BTExecutor::create_behavior_tree(){
     factory_.registerBuilder<authenticatePersonNode>("authenticate_person", builder);
 
     builder = [=](const std::string &name, const BT::NodeConfiguration &config){
-        return std::make_unique<depositNode>(name, config, shared_from_this());
+        return std::make_unique<waitForDepositNode>(name, config, shared_from_this());
     };
-    factory_.registerBuilder<depositNode>("deposit", builder);
+    factory_.registerBuilder<waitForDepositNode>("wait_for_deposit", builder);
     
     builder = [=](const std::string &name, const BT::NodeConfiguration &config){
         return std::make_unique<openDrawerNode>(name, config, shared_from_this());
     };
     factory_.registerBuilder<openDrawerNode>("open_drawer", builder);
-    
-    // builder = [=](const std::string &name, const BT::NodeConfiguration &config){
-    //     return std::make_unique<drawerInterfaceNode>(name, config, shared_from_this());
-    // };
-    // factory_.registerBuilder<drawerInterfaceNode>("drawer_interface", builder);
-    
+
     builder = [=](const std::string &name, const BT::NodeConfiguration &config){
         return std::make_unique<navToNode>(name, config, shared_from_this());
     };

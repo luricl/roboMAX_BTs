@@ -7,17 +7,16 @@
 #include <string>
 
 
-class depositNode: public BT::ConditionNode{
+class waitForDepositNode: public BT::ConditionNode{
     public:
-        explicit depositNode(const std::string &name,
+        explicit waitForDepositNode(const std::string &name,
                                const BT::NodeConfiguration &config,
                                rclcpp::Node::SharedPtr node_ptr);
 
         BT::NodeStatus tick() override;
 
         static BT::PortsList providedPorts() {
-            return BT::PortsList {BT::OutputPort<std::string>("deposit_signal"),
-                                  BT::InputPort<int>("wait_duration_sec")};
+            return BT::PortsList {BT::InputPort<int>("wait_duration_sec")};
         }
 
         void update_msg(const std_msgs::msg::String::SharedPtr new_msg);

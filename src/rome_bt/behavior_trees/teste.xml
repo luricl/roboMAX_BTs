@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4"
+      main_tree_to_execute="Untitled">
+  <BehaviorTree ID="Untitled">
+    <Sequence>
+      <open_drawer wait_duration_sec="60"/>
+      <wait_for_deposit wait_duration_sec="60"/>
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="open_drawer"
+            editable="true">
+      <input_port name="wait_duration_sec"/>
+    </Action>
+    <Condition ID="wait_for_deposit"
+               editable="true">
+      <input_port name="wait_duration_sec"/>
+    </Condition>
+  </TreeNodesModel>
+
+</root>

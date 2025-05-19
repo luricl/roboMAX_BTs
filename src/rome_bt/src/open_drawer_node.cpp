@@ -20,8 +20,8 @@ void openDrawerNode::update_msg(const std_msgs::msg::String::SharedPtr new_msg){
 bool openDrawerNode::wait_for_message(int wait_duration){
     rclcpp::WaitSet wait_set;
     wait_set.add_subscription(str_subscriber_ptr_);
+    RCLCPP_INFO_STREAM(node_ptr_->get_logger(), "waiting for signal to open...\n");
     auto ret = wait_set.wait(std::chrono::seconds(wait_duration));
-    RCLCPP_INFO_STREAM(node_ptr_->get_logger(), "waiting for signal...\n");
     if (ret.kind() == rclcpp::WaitResultKind::Ready) {        
         std_msgs::msg::String msg;
         rclcpp::MessageInfo info;
@@ -36,7 +36,7 @@ BT::NodeStatus openDrawerNode::tick(){
     int wait_duration = wait_duration_sec.value();
     bool received_msg = wait_for_message(wait_duration);
 
-    if (msg_.empty() || !received_msg)
+    if (!received_msg)
         return BT::NodeStatus::FAILURE;
 
     RCLCPP_INFO_STREAM(node_ptr_->get_logger(), "Drawer open\n");
