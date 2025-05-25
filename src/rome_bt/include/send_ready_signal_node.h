@@ -2,12 +2,12 @@
 #include <rclcpp/qos.hpp>
 #include "std_msgs/msg/string.hpp"
 
-#include "behaviortree_cpp_v3/condition_node.h"
+#include "behaviortree_cpp_v3/action_node.h"
 
 #include <string>
 
 
-class sendReadySignalNode: public BT::ConditionNode{
+class sendReadySignalNode: public BT::SyncActionNode{
     public:
         explicit sendReadySignalNode(const std::string &name,
                                     const BT::NodeConfiguration &config,

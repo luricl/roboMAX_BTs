@@ -3,8 +3,8 @@
 
 sendReadySignalNode::sendReadySignalNode(const std::string &xml_tag_name,
                              const BT::NodeConfiguration &conf,
-                             rclcpp::Node::SharedPtr node_ptr): BT::ConditionNode(xml_tag_name, conf){
-    std::string topic = "ready_signal";
+                             rclcpp::Node::SharedPtr node_ptr): BT::SyncActionNode(xml_tag_name, conf){
+    std::string topic = "ready";
     auto qos = rclcpp::SystemDefaultsQoS();
     qos.best_effort();
     str_publisher_ptr_ = node_ptr->create_publisher<std_msgs::msg::String>(topic, qos);

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4"
+      main_tree_to_execute="main">
+  <BehaviorTree ID="ApproachPatient">
+    <Sequence>
+      <announce_procedure message="{procedure_msg}"
+                          number="5"/>
+      <provide_instructions message="{instructions_msg}"
+                            number="5"/>
+      <Fallback>
+        <collect_vital_signs patient_type="{patient_type}"
+                             wait_duration_sec="600"/>
+        <Fallback>
+          <assess_patient message="{assessment_questions}"
+                          number="5"/>
+          <send_alert person_id="{doctor_id}"
+                      number="5"/>
+        </Fallback>
+      </Fallback>
+      <desinfect_robot robot_id="{robot_id}"
+                       wait_duration_sec="60"/>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="EnterRoom">
+    <Sequence>
+      <Fallback>
+        <check_patient_availability wait_duration_sec="60"/>
+        <Sequence>
+          <return_to_base x="0"
+                          y="0"/>
+          <wait_for_return minutes="5"
+                           wait_duration_sec="60"/>
+          <navTo x="{room_x}"
+                 y="{room_y}"
+                 yaw="0"/>
+        </Sequence>
+      </Fallback>
+      <Fallback>
+        <check_battery battery_level="50"
+                       wait_duration_sec="60"/>
+        <Sequence>
+          <request_reassignment message="battery levels are low for this robot"
+                                number="5"/>
+          <return_to_base x="0"
+                          y="0"/>
+        </Sequence>
+      </Fallback>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="GoToPatientRoom">
+    <Sequence>
+      <get_room_coordinates x="{room_x}"
+                            y="{room_y}"/>
+      <navTo x="{room_x}"
+             y="{room_y}"
+             yaw="0"/>
+      <get_patient_id id="{patient_id}"
+                      wait_duration_sec="60"/>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="main">
+    <Fallback>
+      <Sequence>
+        <SubTree ID="GoToPatientRoom"/>
+        <SubTree ID="EnterRoom"/>
+        <SubTree ID="ApproachPatient"/>
+      </Sequence>
+      <return_to_base x=""
+                      y=""/>
+    </Fallback>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="announce_procedure"
+            editable="true">
+      <input_port name="message"/>
+      <input_port name="number"/>
+    </Action>
+    <Action ID="assess_patient"
+            editable="true">
+      <input_port name="message"/>
+      <input_port name="number"/>
+    </Action>
+    <Condition ID="check_battery"
+               editable="true">
+      <input_port name="battery_level"/>
+      <input_port name="wait_duration_sec"/>
+    </Condition>
+    <Condition ID="check_patient_availability"
+               editable="true">
+      <input_port name="wait_duration_sec"/>
+    </Condition>
+    <Action ID="collect_vital_signs"
+            editable="true">
+      <input_port name="patient_type"/>
+      <input_port name="wait_duration_sec"/>
+    </Action>
+    <Action ID="desinfect_robot"
+            editable="true">
+      <input_port name="robot_id"/>
+      <input_port name="wait_duration_sec"/>
+    </Action>
+    <Action ID="get_patient_id"
+            editable="true">
+      <output_port name="id"/>
+      <input_port name="wait_duration_sec"/>
+    </Action>
+    <Action ID="get_room_coordinates"
+            editable="true">
+      <output_port name="x"/>
+      <output_port name="y"/>
+    </Action>
+    <Action ID="navTo"
+            editable="true">
+      <input_port name="x"/>
+      <input_port name="y"/>
+      <input_port name="yaw"/>
+    </Action>
+    <Action ID="provide_instructions"
+            editable="true">
+      <input_port name="message"/>
+      <input_port name="number"/>
+    </Action>
+    <Action ID="request_reassignment"
+            editable="true">
+      <input_port name="message"/>
+      <input_port name="number"/>
+    </Action>
+    <Action ID="return_to_base"
+            editable="true">
+      <input_port name="x"/>
+      <input_port name="y"/>
+    </Action>
+    <Action ID="send_alert"
+            editable="true">
+      <input_port name="person_id"/>
+      <input_port name="number"/>
+    </Action>
+    <Action ID="wait_for_return"
+            editable="true">
+      <input_port name="minutes"/>
+      <input_port name="wait_duration_sec"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>

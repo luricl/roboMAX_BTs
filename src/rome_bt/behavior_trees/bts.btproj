@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4" project_name="BTs">
+    <include path="lab_samples_bt.xml"/>
+    <include path="vital_signs_bt.xml"/>
+    <!-- Description of Node Models (used by Groot) -->
+    <TreeNodesModel>
+        <Action ID="announce_procedure" editable="true">
+            <input_port name="message"/>
+            <input_port name="number"/>
+        </Action>
+        <Action ID="approach_arm" editable="true">
+            <output_port name="arm"/>
+            <input_port name="wait_duration_sec"/>
+        </Action>
+        <Action ID="approach_person" editable="true">
+            <output_port name="person_id"/>
+            <input_port name="wait_duration_sec"/>
+        </Action>
+        <Action ID="assess_patient" editable="true">
+            <input_port name="message"/>
+            <input_port name="number"/>
+        </Action>
+        <Condition ID="authenticate_person" editable="true">
+            <input_port name="person"/>
+            <input_port name="number"/>
+        </Condition>
+        <Condition ID="check_battery" editable="true">
+            <input_port name="battery_level"/>
+            <input_port name="wait_duration_sec"/>
+        </Condition>
+        <Condition ID="check_patient_availability" editable="true">
+            <input_port name="wait_duration_sec"/>
+        </Condition>
+        <Action ID="collect_vital_signs" editable="true">
+            <input_port name="patient_type"/>
+            <input_port name="wait_duration_sec"/>
+        </Action>
+        <Action ID="desinfect_robot" editable="true">
+            <input_port name="robot_id"/>
+            <input_port name="wait_duration_sec"/>
+        </Action>
+        <Action ID="get_patient_id" editable="true">
+            <output_port name="id"/>
+            <input_port name="wait_duration_sec"/>
+        </Action>
+        <Action ID="get_room_coordinates" editable="true">
+            <output_port name="x"/>
+            <output_port name="y"/>
+        </Action>
+        <Action ID="navTo" editable="true">
+            <input_port name="x"/>
+            <input_port name="y"/>
+            <input_port name="yaw"/>
+        </Action>
+        <Action ID="open_drawer" editable="true">
+            <input_port name="wait_duration_sec"/>
+        </Action>
+        <Action ID="provide_instructions" editable="true">
+            <input_port name="message"/>
+            <input_port name="number"/>
+        </Action>
+        <Action ID="request_human_assistance" editable="true">
+            <input_port name="message" default="assistance requested"/>
+            <input_port name="number" default="5"/>
+        </Action>
+        <Action ID="request_reassignment" editable="true">
+            <input_port name="message"/>
+            <input_port name="number"/>
+        </Action>
+        <Action ID="return_to_base" editable="true">
+            <input_port name="x"/>
+            <input_port name="y"/>
+        </Action>
+        <Action ID="send_alert" editable="true">
+            <input_port name="person_id"/>
+            <input_port name="number"/>
+        </Action>
+        <Action ID="send_ready_signal" editable="true">
+            <input_port name="message"/>
+            <input_port name="number"/>
+        </Action>
+        <Condition ID="wait_for_deposit" editable="true">
+            <input_port name="wait_duration_sec"/>
+        </Condition>
+        <Action ID="wait_for_return" editable="true">
+            <input_port name="minutes"/>
+            <input_port name="wait_duration_sec"/>
+        </Action>
+    </TreeNodesModel>
+</root>

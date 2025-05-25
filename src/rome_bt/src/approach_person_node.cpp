@@ -35,14 +35,18 @@ bool approachPersonNode::wait_for_message(int wait_duration){
 }
 
 BT::NodeStatus approachPersonNode::tick(){
+    // Read bt's fields
     auto wait_duration_sec = getInput<int>("wait_duration_sec");
     int wait_duration = wait_duration_sec.value();
     bool received_msg = wait_for_message(wait_duration);
 
+    // Check if received message
     if (msg_.empty() || !received_msg)
         return BT::NodeStatus::FAILURE;
 
     RCLCPP_INFO_STREAM(node_ptr_->get_logger(), "approaching person: " << msg_.c_str() << "\n");
+    
+    // Set the output
     setOutput("person_id", msg_);
     return BT::NodeStatus::SUCCESS;
 }

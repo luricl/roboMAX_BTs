@@ -3,9 +3,10 @@
 
 approachArmNode::approachArmNode(const std::string &xml_tag_name,
                              const BT::NodeConfiguration &conf,
-                             rclcpp::Node::SharedPtr node_ptr): BT::ConditionNode(xml_tag_name, conf){
+                             rclcpp::Node::SharedPtr node_ptr): BT::ConditionNode(xml_tag_name, conf), node_ptr_(node_ptr)
+{
     
-    std::string topic = "arm";
+    std::string topic = "approach_arm";
 
     auto qos = rclcpp::SystemDefaultsQoS();
     qos.best_effort();
@@ -43,6 +44,7 @@ BT::NodeStatus approachArmNode::tick(){
     if (msg_.empty() || !received_msg)
         return BT::NodeStatus::FAILURE;
 
+    RCLCPP_INFO_STREAM(node_ptr_->get_logger(), "approaching person: " << msg_.c_str() << "\n");
     setOutput("arm", msg_);
     return BT::NodeStatus::SUCCESS;
 }
